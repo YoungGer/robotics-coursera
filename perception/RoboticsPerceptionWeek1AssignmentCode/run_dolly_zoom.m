@@ -11,6 +11,9 @@ H1 = points.points_A(1,2) - points.points_A(2,2);
 H2 = points.points_C(1,2) - points.points_C(2,2);
 ratio = 2;
 
+% init
+project_objects(f_ref, 0, points, 2);
+
 %% Dolly Zoom: keep one object's height constant 
 
 f = compute_focal_length(d_ref, f_ref, pos);

@@ -16,5 +16,11 @@ function [ f ] = compute_focal_length( d_ref, f_ref, pos )
 
 % YOUR CODE HERE
 
+f = 1 : length(pos);
+
+for i = 1 : length(pos)
+    
+    f(i) = f_ref / d_ref * (d_ref - pos(i));
+
 end
 

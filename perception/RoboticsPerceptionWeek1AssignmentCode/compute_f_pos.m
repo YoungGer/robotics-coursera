@@ -20,5 +20,8 @@ function [ f, pos ] = compute_f_pos( d1_ref, d2_ref, H1, H2, ratio, f_ref )
 
 % YOUR CODE HERE
 
+pos = (d1_ref * H2 * ratio - H1 * d2_ref) / (ratio * H2 - H1);
+f = f_ref / d1_ref * (d1_ref - pos);
+
 end
 
