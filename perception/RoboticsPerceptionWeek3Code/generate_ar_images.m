@@ -9,6 +9,7 @@
 % want)
 getFrame = @(i) imread(sprintf('data/apriltagims/image%03d.jpg',i));
 num_frames = 166;
+%num_frames = 15;
 % Initialize the images
 video_imgs = cell(num_frames, 1); 
 % Process all the images
@@ -32,6 +33,7 @@ corners = track_corners(video_imgs,initial_points);
 
 %% Draw points in the image
 num_frames = 166;
+%num_frames = 15;
 generated_imgs = cell(num_frames, 1); 
 % for i = 1:num_frames
 %     

@@ -8,7 +8,10 @@
 % Initialize videoreader for video sequence (replace with your own if you
 % want)
 getFrame = @(i) imread(sprintf('data/apriltagims/image%03d.jpg',i));
+
 num_frames = 166;
+% num_frames = 10;
+
 % Initialize the images
 video_imgs = cell(num_frames, 1); 
 % Process all the images
